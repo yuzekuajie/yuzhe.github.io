@@ -1,0 +1,16 @@
+#include"stdio.h"
+#include"string.h"
+int main()
+{
+    char a[100];
+    int i=0,j,l;
+    gets(a);
+    l=strlen(a);//测a的长度
+    for(j=0;j<l;j++)
+    {
+        if(a[j]>='a'&&a[j]<='z')
+            a[j]=a[j]-32;//大写和小写字母ASCII码差32
+    }
+    puts(a);
+    return 0;
+}
